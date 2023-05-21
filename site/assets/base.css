@@ -1,0 +1,122 @@
+:root {
+  --primary: #fff;
+  --primary-2: #f1f3f5;
+  --secondary: #fff;
+  --secondary-2: #000;
+  --selection: var(--cyan);
+  --text-base: #000;
+  --text-primary: #000;
+  --text-secondary: rgb(0, 0, 0);
+  --hover: rgb(229, 229, 231);
+  --hover-1: rgb(229, 229, 231);
+  --hover-2: rgb(229, 229, 231);
+  --cyan: #22b8cf;
+  --green: #37b679;
+  --red: #da3c3c;
+  --purple: #f81ce5;
+  --blue: #0070f3;
+  --pink: #ff0080;
+  --pink-light: #ff379c;
+  --magenta: #eb367f;
+  --black: #000000;
+  /* --violet: #7928ca;
+  --violet-dark: #4c2889; */
+  --accent-9: #000000;
+  --accent-8: #000000;
+  --accent-7: #000;
+  --accent-6: #000000;
+  --accent-5: #fff;
+  --accent-4: #000000;
+  --accent-3: #000000;
+  --accent-2: #fff;
+  --accent-1: #000;
+  --accent-0: #fff;
+  --font-sans: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue',
+    'Helvetica', sans-serif;
+}
+
+[data-theme='light'] {
+  --primary: #ffffff;
+  --primary-2: #ffffff;
+  --secondary: #ffffff;
+  --secondary-2: #000000;
+  --hover: rgb(229, 229, 231);
+  --hover-1: rgb(229, 229, 231);
+  --hover-2: rgb(229, 229, 231);
+  --selection: white;
+  --text-base: black;
+  --text-primary: rgb(0, 0, 0);
+  --text-secondary: rgb(0, 0, 0);
+  --accent-9: #fff;
+  --accent-8: #000000;
+  --accent-7: #000000;
+  --accent-6: #000000;
+  --accent-5: #000000;
+  --accent-4: #000000;
+  --accent-3: #000000;
+  --accent-2: #000000;
+  --accent-1: rgb(255, 255, 255);
+  --accent-0: rgb(255, 255, 255);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+  touch-action: manipulation;
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary);
+  color: var(--text-primary);
+  overscroll-behavior-x: none;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
